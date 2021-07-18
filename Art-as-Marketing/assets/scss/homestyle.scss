@@ -1,0 +1,92 @@
+// Copyright (c) 2021 Marta Fattori
+// This code is licensed under MIT license (see LICENSE-MIT for details)
+$dur: 2s;
+$timing: ease-out;
+
+$cta-color: yellow;
+
+.lngr:hover div {
+  animation: g-b-glw $dur $timing infinite;
+  cursor: pointer;
+}
+
+.lngr:hover .child {
+  filter: saturate(1.15);
+  background: {
+    filter: none !important;
+  };
+}
+
+.c-t-tv:hover .s-d2-tv {
+  animation: g-t-glw $dur $timing infinite;
+}
+
+.s-d2-tv:hover {
+  animation: g-t-glw $dur $timing infinite;
+}
+
+@keyframes g-b-glw {
+    from {
+        background-color: $cta-color;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.125),
+                    0 2px 2px rgba(0,0,0,0.1),
+                    0 4px 4px rgba(0,0,0,0.075),
+                    0 8px 8px rgba(0,0,0,0.05),
+                    0 16px 16px rgba(0,0,0,0.025);
+    }
+    37.5% {
+        background-color: $cta-color;
+        box-shadow: 0 0 1.125px darken(rgba($cta-color,0.025), 6%),
+                    0 0 2.25px darken(rgba($cta-color,0.05), 7%),
+                    0 0 4.5px darken(rgba($cta-color,0.075), 8%),
+                    0 0 9px darken(rgba($cta-color,0.1), 9%),
+                    0 0 18px darken(rgba($cta-color,0.125), 10%);
+    }
+    to {
+        background-color: $cta-color;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.125),
+                    0 2px 2px rgba(0,0,0,0.1),
+                    0 4px 4px rgba(0,0,0,0.075),
+                    0 8px 8px rgba(0,0,0,0.05),
+                    0 16px 16px rgba(0,0,0,0.025);
+    }
+}
+
+@keyframes g-t-glw {
+    from {
+      text-shadow: 0 0.25px 0.25px rgba(0,0,0,0.125),
+                  0 0.5px 0.5px rgba(0,0,0,0.1),
+                  0 1.25px 1.25px rgba(0,0,0,0.075),
+                  0 2.5px 2.5px rgba(0,0,0,0.05),
+                  0 5px 5px rgba(0,0,0,0.025);
+    }
+    37.5% {
+        text-shadow: 0 0.25px 0.28125px rgba($cta-color,0.01041666666666666667),
+                    0 0.5px 0.5625px rgba($cta-color,0.0208333333333333333),
+                    0 1.25px 1.125px rgba($cta-color,0.03125),
+                    0 2.5px 2.25px rgba($cta-color,0.041666666666666667),
+                    0 5px 4.5px rgba($cta-color,0.05208333333333333333);
+    }
+    to {
+      text-shadow: 0 0.25px 0.25px rgba(0,0,0,0.125),
+                  0 0.5px 0.5px rgba(0,0,0,0.1),
+                  0 1.25px 1.25px rgba(0,0,0,0.075),
+                  0 2.5px 2.5px rgba(0,0,0,0.05),
+                  0 5px 5px rgba(0,0,0,0.025);
+    }
+}
+
+/* homepage clickable component animation */
+.clckbl {
+  backface-visibility: hidden;
+}
+
+.clckbl-enter {
+  opacity: 0;
+  transform: rotateY(50deg);
+}
+
+.clckbl-enter-to {
+  opacity: 1;
+  transform: rotateY(0deg);
+}

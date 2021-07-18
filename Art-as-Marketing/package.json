@@ -1,0 +1,43 @@
+{
+  "name": "AAM",
+  "version": "1.0.0",
+  "description": "Art as Marketing",
+  "author": "Cuttage",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build:modern": "nuxt build --modern=server",
+    "start:modern": "nuxt start --modern=server",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/component-cache": "^1.1.6",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@vue/composition-api": "^1.0.0-rc.2",
+    "conversational-form": "^1.0.2",
+    "firebase": "^8.2.9",
+    "gsap": "^3.6.0",
+    "hammerjs": "^2.0.8",
+    "node-sass": "^5.0.0",
+    "nuxt": "^2.15.4",
+    "nuxt-sass-resources-loader": "^2.0.5",
+    "requestidlecallback-polyfill": "^1.0.2",
+    "vue-next-level-scroll": "^1.2.0",
+    "web-animations-js": "^2.3.2",
+    "zdog": "^1.1.2"
+  },
+  "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "lqip-loader": "^2.1.1",
+    "nuxt-purgecss": "^0.2.1",
+    "prettier": "^2.2.1",
+    "responsive-loader": "^2.3.0",
+    "sass-loader": "^10.1.1",
+    "sharp": "^0.27.2"
+  }
+}

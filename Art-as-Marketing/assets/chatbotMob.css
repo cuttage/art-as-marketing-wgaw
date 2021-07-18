@@ -1,0 +1,538 @@
+/*  Copyright (c) 2021 Marta Fattori
+	  This code is licensed under MIT license (see LICENSE-MIT for details) */
+/* purgecss start ignore */
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre:500&display=swap'); /*Proza Libre: alternative*/
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+cf-chat .scrollableInner.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+cf-chat .scrollableInner.scroll {
+  -ms-overflow-style: none;
+}
+
+cf-chat .scrollableInner {
+  padding-bottom: 18px !important;
+}
+
+cf-chat .scrollableInner.scroll {
+  margin-bottom: 0 !important;
+}
+
+cf-input input[rows='1'],
+cf-input textarea[rows='1'] {
+    max-width: calc(11.683333333333333rem + 12vw) !important;
+    text-overflow: ellipsis !important;
+}
+
+cf-chat-response text {
+  word-break: break-word !important;
+}
+
+.user text {
+  line-height: 1.5 !important;
+}
+
+cf-chat-response.user text>p.show {
+  margin-top: -0.2rem !important;
+  margin-bottom: -0.2rem !important;
+}
+
+cf-input .inputWrapper {
+  display: flex !important;
+  align-items: center !important;
+}
+
+cf-input.animate-in input, cf-input.animate-in textarea {
+  background: transparent !important;
+}
+
+.inputWrapper {
+    height: 3.474561403508772rem !important;
+}
+
+cf-input-button.cf-input-button .cf-input-icons>div {
+  width: 60px !important;
+}
+
+cf-input-button.cf-input-button {
+  height: 60px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  position: absolute !important;
+  top: auto !important;
+  bottom: 0.39969298245614rem !important;
+  right: 0 !important;
+  float: right !important;
+}
+
+@media only screen and (max-width: 858px) {
+  .inputWrapper {
+    margin-top: -0.4rem !important;
+  }
+  cf-input-button.cf-input-button {
+    bottom: 0.19969298245614rem !important;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  cf-input-button.cf-input-button .cf-input-icons>div {
+    width: 60px !important;
+    position: relative;
+  }
+
+  cf-input-button.cf-input-button {
+    height: 60px !important;
+    position: relative;
+  }
+
+  @media only screen and (max-width: 419px) and (orientation: portrait) {
+    cf-input-button.cf-input-button .cf-input-icons>div {
+      width: 60px !important;
+    }
+    cf-input-button.cf-input-button {
+      height: 60px !important;
+    }
+  }
+}
+
+@media (min-width: 1152px) {
+    cf-input-button.cf-input-button:focus .cf-icon-progress,cf-input-button.cf-input-button:hover .cf-icon-progress {
+        animation: cf-arrow-up 0.75s cubic-bezier(0.645,0.045,0.355,1) !important;
+        animation-delay: 0.2s !important;
+    }
+}
+
+*, *:before, *:after {
+ box-sizing: none !important; /* test on test page layout without border-box */
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.animate-in,
+.inputWrapper,
+.hide-nav-buttons,
+.animate-in,
+.one-row,
+.resized,
+cf-list,
+cf-list-button,
+cf-input-control-elements,
+.hide-input {
+  height:3.074561403508772rem;
+  background-color: transparent !important;
+}
+
+.animate-in,
+.hide-input {
+  height:auto;
+  color: pink !important;
+}
+
+cf-radio-button,
+.cf-button,
+cf-radio {
+  border: 1px solid pink !important;
+}
+
+cf-input-control-elements,
+.hide-nav-buttons,
+.animate-in,
+.one-row,
+.resized {
+  margin-bottom: 0 !important;
+}
+
+cf-info {
+  color: inherit !important;
+  overflow: visible;
+}
+
+/* portrait */
+@media only screen and (orientation : portrait) {
+  @media only screen and (max-width: 419px) {
+    @media only screen and (max-width: 398px) {
+      .robot text > p {
+        -webkit-font-smoothing: antialiased;
+        color: rgba(245, 242, 235,0.98) !important;
+        letter-spacing: 0.09em !important;
+      }
+      .user text,
+      .robot text,
+      textarea,
+      input {
+        -webkit-font-smoothing: antialiased;
+        font-family: "Proza Libre", "Helvetica Neue Roman", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+        font-size: 0.662675438596491rem !important;
+        font-weight: 500;
+        color: rgba(245, 242, 235,0.98) !important;
+        text-rendering: geometricPrecision;
+        background-color: blue !important;
+      }
+    }
+    @media only screen and (min-width: 399px) {
+      .robot text > p {
+        -webkit-font-smoothing: antialiased;
+        background: linear-gradient(to right, rgba(245, 242, 235,0.98), rgba(245, 242, 235,0.98)) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        letter-spacing: 0.048em !important;
+      }
+      .user text,
+      .robot text,
+      textarea,
+      input {
+        -webkit-font-smoothing: antialiased;
+        font-family: "Proza", "Helvetica Neue Roman", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+        font-size: 0.622675438596491rem !important;
+        font-weight: 500;
+        color: rgba(245, 242, 235,0.98) !important;
+        text-rendering: geometricPrecision;
+        background-color: blue !important;
+      }
+    }
+    #conversational-form {
+      min-width: 0 !important;
+      width: 90% !important;
+    }
+    input {
+      text-shadow: 0 0.01px 0.01px rgba(0,0,0,0.20),
+                  0 0.02px 0.02px rgba(0,0,0,0.16),
+                  0 0.04px 0.04px rgba(0,0,0,0.12),
+                  0 0.08px 0.08px rgba(0,0,0,0.08),
+                  0 0.16px 0.16px rgba(0,0,0,0.04) !important; /*cuts g*/
+    }
+    .user text {
+      line-height: 1.8 !important;
+      background-color: transparent !important;
+      letter-spacing: 0.09em !important;
+    }
+
+    cf-input input:hover::-webkit-input-placeholder,cf-input textarea:hover::-webkit-input-placeholder {
+      color: rgba(245, 242, 235,1) !important;
+    }
+
+    cf-input input:hover::-moz-input-placeholder,cf-input textarea:hover::-moz-input-placeholder {
+      color: rgba(245, 242, 235,1) !important;
+    }
+
+    cf-input input:hover:-moz-input-placeholder,cf-input textarea:hover:-moz-input-placeholder {
+      color: rgba(245, 242, 235,1) !important;
+    }
+
+    cf-input input:hover:-ms-input-placeholder,cf-input textarea:hover:-ms-input-placeholder {
+      color: rgba(245, 242, 235,1) !important;
+    }
+  }
+  @media only screen and (min-width: 420px) {
+    #conversational-form {
+      width: 50%;
+      min-width: 476px !important;
+    }
+    textarea,
+    input {
+      -webkit-font-smoothing: antialiased;
+      font-family: "Helvetica Neue Roman", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+      font-size: 0.662675438596491rem !important;
+      font-weight: 500;
+      color: rgba(245, 242, 235,0.98) !important;
+      text-rendering: geometricPrecision;
+      background-color: blue !important;
+      display: inline-block !important;
+      vertical-align :middle !important;
+    }
+    .user text {
+      font-size: 0.471184210526316rem !important;
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.3) !important;
+      background-color: #4099ff !important;
+    }
+    .robot text {
+      font-size: 0.522675438596491rem;
+      font-weight: 400;
+    }
+  }
+}
+
+/* landscape */
+@media only screen and (orientation : landscape) {
+  @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 398px) {
+      .robot text > p {
+        -webkit-font-smoothing: antialiased;
+        color: rgba(245, 242, 235,0.98) !important;
+        letter-spacing: 0.09em !important;
+      }
+      .user text,
+      .robot text,
+      textarea,
+      input {
+        -webkit-font-smoothing: antialiased;
+        font-family: "Proza Libre", "Helvetica Neue Roman", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+        font-size: 0.662675438596491rem !important;
+        font-weight: 500;
+        color: rgba(245, 242, 235,0.98) !important;
+        text-rendering: geometricPrecision;
+        background-color: blue !important;
+      }
+    }
+    @media only screen and (min-width: 399px) {
+      .robot text > p {
+        -webkit-font-smoothing: antialiased;
+        background: linear-gradient(to right, rgba(245, 242, 235,0.98), rgba(245, 242, 235,0.98)) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        letter-spacing: 0.048em !important;
+      }
+      .user text,
+      .robot text,
+      textarea,
+      input {
+        -webkit-font-smoothing: antialiased;
+        font-family: "Proza", "Helvetica Neue Roman", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+        font-size: 0.622675438596491rem !important;
+        font-weight: 500;
+        color: rgba(245, 242, 235,0.98) !important;
+        text-rendering: geometricPrecision;
+      }
+    }
+    #conversational-form {
+      min-width: 0 !important;
+      width: 90% !important;
+    }
+    input {
+      text-shadow: 0 0.01px 0.01px rgba(0,0,0,0.20),
+                  0 0.02px 0.02px rgba(0,0,0,0.16),
+                  0 0.04px 0.04px rgba(0,0,0,0.12),
+                  0 0.08px 0.08px rgba(0,0,0,0.08),
+                  0 0.16px 0.16px rgba(0,0,0,0.04) !important; /*cuts g*/
+    }
+    .user text {
+      line-height: 1.8 !important;
+      background-color: transparent !important;
+      letter-spacing: 0.09em !important;
+    }
+
+    cf-input input:hover::-webkit-input-placeholder,cf-input textarea:hover::-webkit-input-placeholder {
+      color: rgba(245, 242, 235,1) !important;
+    }
+
+    cf-input input:hover::-moz-input-placeholder,cf-input textarea:hover::-moz-input-placeholder {
+      color: rgba(245, 242, 235,1) !important;
+    }
+
+    cf-input input:hover:-moz-input-placeholder,cf-input textarea:hover:-moz-input-placeholder {
+      color: rgba(245, 242, 235,1) !important;
+    }
+
+    cf-input input:hover:-ms-input-placeholder,cf-input textarea:hover:-ms-input-placeholder {
+      color: rgba(245, 242, 235,1) !important;
+    }
+  }
+  @media only screen and (min-width: 641px) {
+    #conversational-form {
+      width: 50%;
+      min-width: 476px !important;
+    }
+    textarea,
+    input {
+      -webkit-font-smoothing: antialiased;
+      font-family: "Helvetica Neue Roman", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+      font-size: 0.662675438596491rem !important;
+      font-weight: 500;
+      color: rgba(245, 242, 235,0.98) !important;
+      text-rendering: geometricPrecision;
+      background-color: blue !important;
+      display: inline-block !important;
+      vertical-align :middle !important;
+    }
+    .user text {
+      font-size: 0.471184210526316rem !important;
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.3) !important;
+      background-color: #4099ff !important;
+    }
+    .robot text {
+      font-size: 0.522675438596491rem;
+      font-weight: 400;
+    }
+  }
+}
+
+@media only screen and (max-width: 858px) {
+  cf-chat-response.robot.peak-thumb thumb {
+      background-size: cover !important;
+      width: 44px;
+      height: 44px;
+  }
+
+  cf-chat-response.user.peak-thumb thumb {
+      background-size: cover !important;
+      width: 44px;
+      height: 44px;
+  }
+  cf-chat {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 859px) {
+  cf-chat-response.robot.peak-thumb thumb {
+      background-size: 190% !important;
+  }
+
+  cf-chat-response.user.peak-thumb thumb {
+      background-size: 120% !important;
+  }
+}
+
+thumb {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  min-width: 44px !important;
+  max-width: 50px ! important;
+  min-height: 44px !important;
+  max-height: 50px ! important;
+  overflow: visible !important;
+  transform: none !important;
+  will-change: transform, opacity;
+}
+
+@media (max-width: 1152) {
+  thumb {
+    width: 1.229824561403509rem !important;
+    height: 1.229824561403509rem !important;
+  }
+}
+
+#conversational-form {
+    justify-content: center;
+    display: flex;
+    border-radius: 0.307456140350877rem;
+    background-color: transparent !important;
+    background: transparent !important;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.125),
+                0 2px 2px rgba(0,0,0,0.1),
+                0 4px 4px rgba(0,0,0,0.075),
+                0 8px 8px rgba(0,0,0,0.05),
+                0 16px 16px rgba(0,0,0,0.025);
+}
+
+.conversational-form,
+.conversational-form--enable-animation,
+.conversational-form--show::before {
+  background-color: transparent !important;
+  background: none !important;
+}
+
+.robot text {
+  min-height: 1.291315789473684rem;
+  line-height: 1.8;
+}
+
+.robot text > p {
+  background: linear-gradient(to right, #FFFAF0, #F5F5F5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.user text {
+    border-radius: calc(0.737894736842105rem * .88);
+    min-height: 0.368947368421053rem;
+    line-height: 0.5;
+}
+
+cf-input-control-elements {
+  padding: 0 !important;
+}
+
+@media (max-width: 1152px) {
+  cf-input {
+    margin-bottom: 0 !important;
+  }
+}
+
+.cf-progressBar,
+.bar::before {
+  background: transparent !important;
+  color: #D25593 !important;
+}
+
+.bar {
+  background: #D25593 !important;
+}
+
+cf-chat-response.user text > p {
+    background-color: transparent !important;
+}
+
+cf-input-button {
+    background: transparent !important;
+    border: none !important;
+}
+cf-input {
+  background: transparent !important;
+  border: none !important;
+  color: inherit !important;
+}
+
+.cf-icon-progress,
+.cf-icon-attachment {
+  background-image: url('~assets/svg/Send.svg') !important;
+  background-size: cover !important;
+}
+
+.cf-input-button,
+.cf-input-icons,
+.cf-icon-progress,
+.cf-icon-attachment {
+  width: 60px !important;
+}
+
+@keyframes cf-arrow-up {
+    0% {
+        transform: translateY(0);
+        transform: scale(1,1);
+        backface-visibility: hidden;
+    }
+
+    40% {
+        transform: translateY(-40px);
+        transform: scale(1,1);
+        backface-visibility: hidden;
+    }
+
+    40.001% {
+        transform: translateY(40px);
+        transform: scale(1,1);
+        backface-visibility: hidden;
+    }
+
+    80% {
+        transform: translateY(-5px);
+        transform: scale(1,1);
+        backface-visibility: hidden;
+    }
+
+    90% {
+        transform: translateY(2px);
+        transform: scale(1,1);
+        backface-visibility: hidden;
+    }
+
+    100% {
+        transform: translateY(0);
+        transform: scale(1,1);
+        backface-visibility: hidden;
+    }
+}
+/* purgecss end ignore */

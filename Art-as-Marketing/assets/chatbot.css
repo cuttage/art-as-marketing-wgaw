@@ -1,0 +1,207 @@
+/*  Copyright (c) 2021 Marta Fattori
+	  This code is licensed under MIT license (see LICENSE-MIT for details) */
+/* purgecss start ignore */
+*, *:before, *:after {
+ box-sizing: none !important; /* test on test page layout without border-box */
+}
+
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.animate-in,
+.inputWrapper,
+.hide-nav-buttons,
+.animate-in,
+.one-row,
+.resized,
+cf-list,
+cf-list-button,
+cf-input-control-elements,
+.hide-input {
+  height:3.074561403508772rem;
+  background-color: transparent !important;
+}
+
+.animate-in,
+.hide-input {
+  height:auto;
+  color: pink !important;
+}
+
+cf-radio-button,
+.cf-button,
+cf-radio {
+  border: 1px solid pink !important;
+}
+
+cf-input-control-elements,
+.hide-nav-buttons,
+.animate-in,
+.one-row,
+.resized {
+  margin-bottom: 0 !important;
+}
+
+cf-info {
+  color: inherit !important;
+  overflow: visible;
+}
+
+#conversational-form {
+    width: 50%;
+    min-width: 476px !important;
+    justify-content: center;
+    display: flex;
+    border-radius: 0.307456140350877rem;
+    background-color: transparent !important;
+    background: transparent !important;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.125),
+                0 2px 2px rgba(0,0,0,0.1),
+                0 4px 4px rgba(0,0,0,0.075),
+                0 8px 8px rgba(0,0,0,0.05),
+                0 16px 16px rgba(0,0,0,0.025);
+}
+
+.conversational-form,
+.conversational-form--enable-animation,
+.conversational-form--show::before {
+  background-color: transparent !important;
+  background: none !important;
+}
+
+.robot text {
+  min-height: 1.291315789473684rem;
+  font-size: 0.522675438596491rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.robot text > p {
+  background: linear-gradient(to right, #FFFAF0, #F5F5F5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.user text {
+  color: rgba(245, 245, 245, 0.3) !important;
+  background-color: #4099ff !important;
+  border-radius: calc(0.737894736842105rem * .88);
+  min-height: 0.368947368421053rem;
+  font-size: 0.471184210526316rem !important;
+  line-height: 0.5;
+  font-weight: 400;
+}
+
+cf-input-control-elements {
+  padding: 0 !important;
+}
+
+@media (max-width: 1152px) {
+  cf-input {
+    margin-bottom: 0 !important;
+  }
+}
+
+textarea,
+input {
+  caret-color: red;
+  height: 3.074561403508772rem !important;
+  transition: all 0.3s ease;
+  letter-spacing: 0.08em;
+  color: rgba(245, 245, 245, 0.79) !important;
+  background-color: transparent !important;
+  font-size: 0.422675438596491rem !important;
+  line-height: 1.18 !important;
+  font-weight: 400 !important;
+  box-shadow: none !important;
+  baseline-shift: 20% !important;
+}
+
+@media only screen and (max-width: 537px) {
+  cf-chat-response.robot.peak-thumb thumb {
+      background-size: cover !important;
+      width: 44px;
+      height: 44px;
+  }
+
+  cf-chat-response.user.peak-thumb thumb {
+      background-size: cover !important;
+      width: 44px;
+      height: 44px;
+  }
+  cf-chat {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 538px) {
+  cf-chat-response.robot.peak-thumb thumb {
+      background-size: 190% !important;
+  }
+
+  cf-chat-response.user.peak-thumb thumb {
+      background-size: 120% !important;
+  }
+}
+
+thumb {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  min-width: 44px !important;
+  max-width: 50px ! important;
+  min-height: 44px !important;
+  max-height: 50px ! important;
+  overflow: visible !important;
+  transform: none !important;
+  will-change: transform, opacity;
+}
+
+@media (max-width: 1152) {
+  thumb {
+    width: 1.229824561403509rem !important;
+    height: 1.229824561403509rem !important;
+  }
+}
+
+.cf-progressBar,
+.bar::before {
+  background: transparent !important;
+  color: #D25593 !important;
+}
+
+.bar {
+  background: #D25593 !important;
+}
+
+cf-chat-response.user text > p {
+    background-color: transparent !important;
+}
+
+cf-input-button {
+    background: transparent !important;
+    border: none !important;
+}
+cf-input {
+  background: transparent !important;
+  border: none !important;
+  color: inherit !important;
+}
+
+.cf-icon-progress,
+.cf-icon-attachment {
+  background-image: url('~assets/svg/Send.svg') !important;
+  background-size: cover !important;
+}
+
+.cf-input-button,
+.cf-input-icons,
+.cf-icon-progress,
+.cf-icon-attachment {
+  width: 3.074561403508772rem !important;
+}
+/* purgecss end ignore */
